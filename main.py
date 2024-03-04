@@ -1,6 +1,6 @@
 # main.py
 
-from lutex_stock_app import LutexStockApp
+from home import LutexStockApp
 from PyQt5.QtWidgets import QApplication
 import sys
 
