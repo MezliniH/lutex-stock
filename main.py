@@ -1,10 +1,17 @@
-# main.py
-
-from home import LutexStockApp
-from PyQt5.QtWidgets import QApplication
 import sys
+sys.path.append("/home/linuxlite/Templates/ui_interface")
+from ui_interface import *
 
-if __name__ == '__main__':
+# main window class
+class MainWindow(QMainWindow):
+    def __init__(self, parent=None):
+        QMainWindow.__init__(self)
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+        self.show()
+
+if __name__ == "__main__":
     app = QApplication(sys.argv)
-    lutex_stock = LutexStockApp()
+    window = MainWindow()
+    window.show()
     sys.exit(app.exec_())
