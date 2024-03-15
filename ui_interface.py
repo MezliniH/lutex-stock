@@ -1,16 +1,18 @@
 # -*- coding: utf-8 -*-
 
+import pandas as pd
+import sqlite3
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 import icons_rc
 
-class Ui_MainWindow(object):
+class Ui_MainWindow(QMainWindow):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(880, 549)
+        MainWindow.resize(1197, 700)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"\n"
@@ -25,6 +27,13 @@ class Ui_MainWindow(object):
 "#main_body{\n"
 "background-color: #071e25; border-radius: 10px;}\n"
 "")
+        
+        def display_data_from_database():
+            conn = sqlite3.connect('lutexdb')  # Adjust this based on your database type
+            query = "SELECT * FROM stock"
+            df = pd.read_sql_query(query, conn)
+            print(df)
+
         self.gridLayout_2 = QGridLayout(self.centralwidget)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.frame_2 = QFrame(self.centralwidget)
@@ -123,6 +132,18 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.body)
 
+        self.line = QFrame(self.main_body)
+        self.line.setObjectName(u"line")
+        self.line.setFrameShape(QFrame.VLine)
+        self.line.setFrameShadow(QFrame.Sunken)
+
+        self.horizontalLayout_3.addWidget(self.line)
+
+        self.widget = QWidget(self.main_body)
+        self.widget.setObjectName(u"widget")
+
+        self.horizontalLayout_3.addWidget(self.widget)
+
 
         self.horizontalLayout.addWidget(self.main_body)
 
@@ -136,9 +157,10 @@ class Ui_MainWindow(object):
         self.header.setStyleSheet(u"background-color: rgb(7, 30, 37);")
         self.header.setFrameShape(QFrame.StyledPanel)
         self.header.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_4 = QHBoxLayout(self.header)
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.frame = QFrame(self.header)
         self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(0, 0, 100, 48))
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout = QVBoxLayout(self.frame)
@@ -153,11 +175,13 @@ class Ui_MainWindow(object):
         icon4.addFile(u":/icons/icons/align-justify.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.Menu.setIcon(icon4)
 
-        self.verticalLayout.addWidget(self.Menu)
+        self.verticalLayout.addWidget(self.Menu, 0, Qt.AlignLeft|Qt.AlignTop)
+
+
+        self.horizontalLayout_4.addWidget(self.frame)
 
         self.frame_3 = QFrame(self.header)
         self.frame_3.setObjectName(u"frame_3")
-        self.frame_3.setGeometry(QRect(440, 0, 219, 42))
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.frame_3)
@@ -174,6 +198,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.titre)
 
 
+        self.horizontalLayout_4.addWidget(self.frame_3)
+
+
         self.gridLayout_2.addWidget(self.header, 0, 0, 1, 1)
 
         MainWindow.setCentralWidget(self.centralwidget)
@@ -182,6 +209,9 @@ class Ui_MainWindow(object):
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
+    
+    # Connect the function to the button click event
+        self.boutons.clicked.connect(display_data_from_database)
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
@@ -192,7 +222,7 @@ class Ui_MainWindow(object):
         self.userguide.setText(QCoreApplication.translate("MainWindow", u"User guide", None))
         self.dashboard.setText(QCoreApplication.translate("MainWindow", u"Dashboard", None))
         self.faq.setText(QCoreApplication.translate("MainWindow", u"FAQ", None))
-        self.body.setText(QCoreApplication.translate("MainWindow", u"MAIN-BODY", None))
+        self.body.setText("")
         self.Menu.setText(QCoreApplication.translate("MainWindow", u" MENU", None))
         self.titre.setText(QCoreApplication.translate("MainWindow", u"Stock fournitures Lutex", None))
     # retranslateUi

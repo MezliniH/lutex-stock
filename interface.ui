@@ -169,12 +169,56 @@ background-color: #071e25; border-radius: 10px;}
           <item>
            <widget class="QLabel" name="body">
             <property name="text">
-             <string>MAIN-BODY</string>
+             <string/>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
             </property>
            </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <column>
+             <property name="text">
+              <string>List</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Ref-Couleur</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>TotalPts</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Consomation</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>StockReel</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget" native="true"/>
           </item>
          </layout>
         </widget>
