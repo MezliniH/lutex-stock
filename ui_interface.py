@@ -5,7 +5,9 @@ import sqlite3
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
-
+import sys
+sys.path.append("/home/linuxlite/Templates/test")
+from test import JsonTableView
 import icons_rc
 
 class Ui_MainWindow(QMainWindow):
@@ -28,11 +30,11 @@ class Ui_MainWindow(QMainWindow):
 "background-color: #071e25; border-radius: 10px;}\n"
 "")
         
-        def display_data_from_database():
-            conn = sqlite3.connect('lutexdb')  # Adjust this based on your database type
-            query = "SELECT * FROM stock"
-            df = pd.read_sql_query(query, conn)
-            print(df)
+       # def display_data_from_database():
+        #    conn = sqlite3.connect('lutexdb')  # Adjust this based on your database type
+         #   query = "SELECT * FROM stock"
+          #  df = pd.read_sql_query(query, conn)
+           # print(df)#
 
         self.gridLayout_2 = QGridLayout(self.centralwidget)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
@@ -211,7 +213,7 @@ class Ui_MainWindow(QMainWindow):
     # setupUi
     
     # Connect the function to the button click event
-        self.boutons.clicked.connect(display_data_from_database)
+        self.boutons.clicked.connect(JsonTableView)
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
@@ -226,4 +228,3 @@ class Ui_MainWindow(QMainWindow):
         self.Menu.setText(QCoreApplication.translate("MainWindow", u" MENU", None))
         self.titre.setText(QCoreApplication.translate("MainWindow", u"Stock fournitures Lutex", None))
     # retranslateUi
-
