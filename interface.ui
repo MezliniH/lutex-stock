@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Fournitures</class>
- <widget class="QMainWindow" name="Fournitures">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>718</width>
-    <height>450</height>
+    <width>891</width>
+    <height>572</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Lutex Fournitures</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
@@ -56,7 +56,7 @@ background-color: #071e25; border-radius: 10px;}
              <string>Boutons</string>
             </property>
             <property name="icon">
-             <iconset resource="../../Desktop/lutex-stock/icons.qrc">
+             <iconset>
               <normaloff>:/icons/icons/folder.svg</normaloff>:/icons/icons/folder.svg</iconset>
             </property>
            </widget>
@@ -67,7 +67,7 @@ background-color: #071e25; border-radius: 10px;}
              <string>Fils</string>
             </property>
             <property name="icon">
-             <iconset resource="../../Desktop/lutex-stock/icons.qrc">
+             <iconset>
               <normaloff>:/icons/icons/folder.svg</normaloff>:/icons/icons/folder.svg</iconset>
             </property>
            </widget>
@@ -78,7 +78,7 @@ background-color: #071e25; border-radius: 10px;}
              <string>Fermetures</string>
             </property>
             <property name="icon">
-             <iconset resource="../../Desktop/lutex-stock/icons.qrc">
+             <iconset>
               <normaloff>:/icons/icons/folder.svg</normaloff>:/icons/icons/folder.svg</iconset>
             </property>
            </widget>
@@ -89,7 +89,7 @@ background-color: #071e25; border-radius: 10px;}
              <string>Elastiques</string>
             </property>
             <property name="icon">
-             <iconset resource="../../Desktop/lutex-stock/icons.qrc">
+             <iconset>
               <normaloff>:/icons/icons/folder.svg</normaloff>:/icons/icons/folder.svg</iconset>
             </property>
            </widget>
@@ -97,10 +97,10 @@ background-color: #071e25; border-radius: 10px;}
           <item>
            <widget class="QPushButton" name="userguide">
             <property name="text">
-             <string>User guide</string>
+             <string>Autres fournitures</string>
             </property>
             <property name="icon">
-             <iconset resource="../../Desktop/lutex-stock/icons.qrc">
+             <iconset>
               <normaloff>:/icons/icons/user-check.svg</normaloff>:/icons/icons/user-check.svg</iconset>
             </property>
            </widget>
@@ -108,10 +108,10 @@ background-color: #071e25; border-radius: 10px;}
           <item>
            <widget class="QPushButton" name="dashboard">
             <property name="text">
-             <string>Dashboard</string>
+             <string>User guide</string>
             </property>
             <property name="icon">
-             <iconset resource="../../Desktop/lutex-stock/icons.qrc">
+             <iconset>
               <normaloff>:/icons/icons/database.svg</normaloff>:/icons/icons/database.svg</iconset>
             </property>
            </widget>
@@ -119,10 +119,10 @@ background-color: #071e25; border-radius: 10px;}
           <item>
            <widget class="QPushButton" name="faq">
             <property name="text">
-             <string>FAQ</string>
+             <string>About</string>
             </property>
             <property name="icon">
-             <iconset resource="../../Desktop/lutex-stock/icons.qrc">
+             <iconset>
               <normaloff>:/icons/icons/help-circle.svg</normaloff>:/icons/icons/help-circle.svg</iconset>
             </property>
            </widget>
@@ -137,7 +137,7 @@ background-color: #071e25; border-radius: 10px;}
   </widget>
  </widget>
  <resources>
-  <include location="../../Desktop/lutex-stock/icons.qrc"/>
+  <include location="icons.qrc"/>
  </resources>
  <connections/>
 </ui>

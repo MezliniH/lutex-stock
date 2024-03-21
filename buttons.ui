@@ -95,11 +95,11 @@ background-color: #071e25; border-radius: 10px;}
               </property>
               <column>
                <property name="text">
-                <string>nom de list</string>
+                <string>liste</string>
                </property>
                <property name="font">
                 <font>
-                 <pointsize>13</pointsize>
+                 <pointsize>11</pointsize>
                  <weight>50</weight>
                  <bold>false</bold>
                  <underline>true</underline>
@@ -112,7 +112,7 @@ background-color: #071e25; border-radius: 10px;}
                </property>
                <property name="font">
                 <font>
-                 <pointsize>13</pointsize>
+                 <pointsize>11</pointsize>
                  <underline>true</underline>
                 </font>
                </property>
@@ -123,7 +123,7 @@ background-color: #071e25; border-radius: 10px;}
                </property>
                <property name="font">
                 <font>
-                 <pointsize>13</pointsize>
+                 <pointsize>11</pointsize>
                  <underline>true</underline>
                 </font>
                </property>
@@ -134,7 +134,7 @@ background-color: #071e25; border-radius: 10px;}
                </property>
                <property name="font">
                 <font>
-                 <pointsize>13</pointsize>
+                 <pointsize>11</pointsize>
                  <underline>true</underline>
                 </font>
                </property>
@@ -145,18 +145,18 @@ background-color: #071e25; border-radius: 10px;}
                </property>
                <property name="font">
                 <font>
-                 <pointsize>13</pointsize>
+                 <pointsize>11</pointsize>
                  <underline>true</underline>
                 </font>
                </property>
               </column>
               <column>
                <property name="text">
-                <string>consomation</string>
+                <string>consommation</string>
                </property>
                <property name="font">
                 <font>
-                 <pointsize>13</pointsize>
+                 <pointsize>11</pointsize>
                  <underline>true</underline>
                 </font>
                </property>
@@ -167,7 +167,7 @@ background-color: #071e25; border-radius: 10px;}
                </property>
                <property name="font">
                 <font>
-                 <pointsize>13</pointsize>
+                 <pointsize>11</pointsize>
                  <underline>true</underline>
                 </font>
                </property>
@@ -189,7 +189,7 @@ background-color: #071e25; border-radius: 10px;}
                <string>Add</string>
               </property>
              </widget>
-             <widget class="QPushButton" name="drop">
+             <widget class="QPushButton" name="vue">
               <property name="geometry">
                <rect>
                 <x>570</x>
@@ -205,14 +205,13 @@ background-color: #071e25; border-radius: 10px;}
                </size>
               </property>
               <property name="styleSheet">
-               <string notr="true">
-background-color: rgb(255, 0, 0);</string>
+               <string notr="true"/>
               </property>
               <property name="text">
-               <string>delete</string>
+               <string>Details</string>
               </property>
              </widget>
-             <widget class="QPushButton" name="refresh">
+             <widget class="QPushButton" name="calculer">
               <property name="geometry">
                <rect>
                 <x>670</x>
@@ -221,12 +220,15 @@ background-color: rgb(255, 0, 0);</string>
                 <height>42</height>
                </rect>
               </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 64, 255);</string>
+              </property>
               <property name="text">
-               <string>Refresh</string>
+               <string>Calculer</string>
               </property>
              </widget>
             </widget>
-            <widget class="QWidget" name="tab1">
+            <widget class="QWidget" name="tab11">
              <attribute name="title">
               <string>Edit</string>
              </attribute>
@@ -266,10 +268,10 @@ font: 16pt &quot;Century Gothic&quot;;</string>
              <widget class="QWidget" name="formLayoutWidget">
               <property name="geometry">
                <rect>
-                <x>70</x>
+                <x>80</x>
                 <y>150</y>
-                <width>381</width>
-                <height>91</height>
+                <width>229</width>
+                <height>62</height>
                </rect>
               </property>
               <layout class="QFormLayout" name="formLayout">
@@ -279,7 +281,7 @@ font: 16pt &quot;Century Gothic&quot;;</string>
                   <string notr="true">font: 75 italic 14pt &quot;Century Gothic&quot;;</string>
                  </property>
                  <property name="text">
-                  <string>ref_couleur</string>
+                  <string>ref_couleur :</string>
                  </property>
                 </widget>
                </item>
@@ -292,7 +294,7 @@ font: 16pt &quot;Century Gothic&quot;;</string>
                   <string notr="true">font: 75 italic 14pt &quot;Century Gothic&quot;;</string>
                  </property>
                  <property name="text">
-                  <string>stock</string>
+                  <string>stock :</string>
                  </property>
                 </widget>
                </item>
@@ -313,8 +315,6 @@ font: 16pt &quot;Century Gothic&quot;;</string>
    </layout>
   </widget>
  </widget>
- <resources>
-  <include location="../../Desktop/lutex-stock/icons.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
