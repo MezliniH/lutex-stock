@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fournitures</class>
+ <widget class="QMainWindow" name="Fournitures">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1065</width>
+    <height>682</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fournitures Lutex</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">
+
+*{border: none; background-color:transparent;color:#fff;}
+#centralwidget{ background-color: #040f13;}
+#side_menu{
+background-color: #071e25; border-radius: 20px;}
+QPushButton{ padding: 10px;
+background-color: #2b3137;
+border-radius: 5px;}
+#main_body{
+background-color: #071e25; border-radius: 10px;}
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0" alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>461</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 19pt &quot;Century Gothic&quot;;</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; text-decoration: underline;&quot;&gt;stock des boutons &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="table">
+             <attribute name="title">
+              <string>Details de stock</string>
+             </attribute>
+             <widget class="QTableWidget" name="tab">
+              <property name="geometry">
+               <rect>
+                <x>9</x>
+                <y>9</y>
+                <width>861</width>
+                <height>391</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>861</width>
+                <height>391</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>861</width>
+                <height>391</height>
+               </size>
+              </property>
+              <column>
+               <property name="text">
+                <string>liste</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                 <underline>true</underline>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>model</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <underline>true</underline>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ref_couleur</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <underline>true</underline>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>stock</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <underline>true</underline>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>rapport de coupe</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <underline>true</underline>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>consommation</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <underline>true</underline>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>stock reel</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <underline>true</underline>
+                </font>
+               </property>
+              </column>
+             </widget>
+             <widget class="QPushButton" name="add">
+              <property name="geometry">
+               <rect>
+                <x>770</x>
+                <y>490</y>
+                <width>91</width>
+                <height>42</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 170, 0);</string>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="vue">
+              <property name="geometry">
+               <rect>
+                <x>570</x>
+                <y>490</y>
+                <width>81</width>
+                <height>42</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>42</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>Delete</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="calculer">
+              <property name="geometry">
+               <rect>
+                <x>670</x>
+                <y>490</y>
+                <width>81</width>
+                <height>42</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 64, 255);</string>
+              </property>
+              <property name="text">
+               <string>Calculer</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="tab11">
+             <attribute name="title">
+              <string>Edit</string>
+             </attribute>
+             <widget class="QLabel" name="title">
+              <property name="geometry">
+               <rect>
+                <x>90</x>
+                <y>30</y>
+                <width>321</width>
+                <height>91</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+font: 16pt &quot;Century Gothic&quot;;</string>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#55aa00;&quot;&gt;Ajouter et mettre a jour :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="updating">
+              <property name="geometry">
+               <rect>
+                <x>330</x>
+                <y>270</y>
+                <width>101</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 170, 255);</string>
+              </property>
+              <property name="text">
+               <string>Update</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="formLayoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>80</x>
+                <y>150</y>
+                <width>229</width>
+                <height>62</height>
+               </rect>
+              </property>
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="ref_coueurLabel">
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 italic 14pt &quot;Century Gothic&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>ref_couleur :</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="refedit"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="stockLabel">
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 italic 14pt &quot;Century Gothic&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>stock :</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="stockedit"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

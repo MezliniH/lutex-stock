@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>891</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lutex Fournitures</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">
+
+*{border: none; background-color:transparent;color:#fff;}
+#centralwidget{ background-color: #040f13;}
+#side_menu{
+background-color: #071e25; border-radius: 20px;}
+QPushButton{ padding: 10px;
+background-color: #2b3137;
+border-radius: 5px;}
+#main_body{
+background-color: #071e25; border-radius: 10px;}
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="menu">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="boutons">
+            <property name="text">
+             <string>Boutons</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icons/icons/folder.svg</normaloff>:/icons/icons/folder.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="fils">
+            <property name="text">
+             <string>Fils</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icons/icons/folder.svg</normaloff>:/icons/icons/folder.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="fermetures">
+            <property name="text">
+             <string>Fermetures</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icons/icons/folder.svg</normaloff>:/icons/icons/folder.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="elastiques">
+            <property name="text">
+             <string>Elastiques</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icons/icons/folder.svg</normaloff>:/icons/icons/folder.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="userguide">
+            <property name="text">
+             <string>Autres fournitures</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icons/icons/user-check.svg</normaloff>:/icons/icons/user-check.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="dashboard">
+            <property name="text">
+             <string>User guide</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icons/icons/database.svg</normaloff>:/icons/icons/database.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="faq">
+            <property name="text">
+             <string>About</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icons/icons/help-circle.svg</normaloff>:/icons/icons/help-circle.svg</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
